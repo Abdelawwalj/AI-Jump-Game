@@ -3,10 +3,15 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #222;
     margin: 0;
+    background-color: #222;
+    overflow: hidden; /* Voorkomt scrollen */
 }
 
 canvas {
     border: 2px solid #fff;
+    display: block; /* Verwijdert ongewenste ruimte onder canvas in sommige browsers */
+    touch-action: none; /* Voorkomt dubbele acties zoals scrollen op mobiele apparaten */
+    width: 100%; /* Zorgt ervoor dat canvas de volledige breedte van het scherm beslaat */
+    height: 100%; /* Zorgt ervoor dat canvas de volledige hoogte van het scherm beslaat */
 }
